@@ -1,0 +1,23 @@
+.header {
+    background-color: #FFF1D5;
+}
+
+.header__image {
+    filter: drop-shadow(0 0 0.75rem rgb(160, 0, 210));
+}
+
+h1 {
+    color: #8C42CB;
+}
+
+h2 {
+    color: #8C42CB;
+}
+
+h3 {
+    color: #8C42CB;
+}
+
+.header__image {
+
+}
