@@ -1,11 +1,11 @@
 body {
     font-family: sans-serif;
+    margin: 0 auto;
 }
-.header {
-    background-color: #FFF1D5;
-}
+
 .header__menu{
     margin-left: 1%;
+    padding-inline-start: 10%;
 }
 .header__image {
     filter: drop-shadow(0 0 0.75rem #CCC1AB);
@@ -36,17 +36,16 @@ h2 {
 
 h3 {
     color: #8C42CB;
-    margin-left: 2%;
+    margin-left: 3%;
 }
 p {
-
     font-size: 100%;
-    margin-left: 2%;
+    margin-left: 3%;
     text-transform: capitalize;
 }
 
 .main {
-    margin-left: 12%;
+    margin-left: 13%;
     padding: 0 10px;
 }
 .main__section {
@@ -54,7 +53,7 @@ p {
     font-size: 100%;
 }
 .footer {
-    margin-left: 12%;
+    margin-left: 13%;
     padding: 0 10px;
 }
 .footer__ul {
@@ -63,6 +62,7 @@ p {
 
 .header__menu__li {
     line-height: 22px;
+    text-align: left;
 }
 
 .main__dl dt {
@@ -71,13 +71,52 @@ p {
 }
 
 .sidenav__header__menu {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%;
+    width: 11%;
+    position: fixed;
+    font-size: 110%;
+    z-index: 1;
+    top: 0;
     left: 0;
-    background-color: #111; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
+    background-color: #111;
+    overflow-x: hidden;
+}
+
+.main__table {
+    margin-left: 2%;
+    width: 50%;
+    border-collapse: collapse;
+    border: 1px solid #555;
+}
+.main__th {
+    color: #8C42CB;
+    padding: 10px;
+    border: 1px solid #555;
+    font-weight: bold;
+    text-align: left;
+}
+.main__td {
+    list-style:none;
+    padding: 10px;
+    border: 1px solid #555;
+}
+.main__table tr:nth-child(2n) {
+    background-color: #C9E4F6;
+}
+@media screen and (max-width: 400px) and (max-width: 700px) {
+    .header__image{
+        display: none;
+    }
+    .sidenav__header__menu {
+        height: 100%;
+        width: 14%;
+        position: fixed;
+        font-size: 90%;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 10px;
+    }
 }
