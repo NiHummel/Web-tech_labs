@@ -70,6 +70,10 @@ p {
     color: #8C42CB;
 }
 
+.main__dl dd {
+    margin-left: 4%;
+}
+
 .sidenav__header__menu {
     height: 100%;
     width: 11%;
