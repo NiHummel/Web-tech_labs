@@ -3,34 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Сайт-портфолио" />
-    <meta name="author" content="Мякишев Никита" />
+    <meta name="author" content="Гуммель Никита" />
     <title>Мякишев Никита - M33041</title>
     <!<link href="outline-prototype-label.css" rel="stylesheet"/>
     <link href="styles.css" rel="stylesheet"/>
 </head>
 <body class="page">
 <header class="header">
-    <img src="image/my_photo.jpg" class="header__image"
-         width="210" height="270" alt='my phtoto' align="right">
-    <h1>Портфолио Никитки</h1>
-    <nav>
+    <nav class="sidenav__header__menu">
         <ul class="header__menu">
             <li class="header__menu__li"><a class="header__menu__link" href="#main">Главная</a></li>
             <li class="header__menu__li"><a class="header__menu__link" href="#work">Где я работал</a></li>
             <li class="header__menu__li"><a class="header__menu__link" href="#education">Где я учился</a></li>
             <li class="header__menu__li"><a class="header__menu__link" href="#skills">Что я умею</a></li>
-            <li class="header__menu__li"><a class="header__menu__link" href="#code">Пример кода</a></li>
-            <li class="header__menu__li"><a class="header__menu__link" href="#ascii_picture">Тотемное животное</a></li>
             <li class="header__menu__li"><a class="header__menu__link" href="#contacts">Контакты</a></li>
         </ul>
     </nav>
-
 </header>
 <main class="main">
+    <h1>Портфолио Никитки</h1>
+    <img src="image/my_photo.jpg" class="header__image" alt="Моё фото">
     <h2 id="main">Главная</h2>
     <p>Привет, вы на моей страничке, я наичнающий дата сатанист и работник платформы по интересам от Большого Брата российского IT</p>
 
-    <section>
+    <section class="main__section">
         <h3 id="work">Где я работал</h3>
         <p><time datetime="2021.08-...">2021.08-...</time> ML-инженер в Яндекс.Дзен</p>
         <p><time datetime="2020.09-2021.03">2020.09-2021.03</time> Ресерчер в одной китайской компании</p>
@@ -40,7 +36,7 @@
         <p> <time datetime="2017">2017-...</time> 09.03.02. Университет ИТМО.</p>
 
         <h3 id="skills">Что я умею</h3>
-        <dl>
+        <dl class="main__dl">
             <dt>Языки</dt>
             <dd>Русский</dd>
             <dd>Английский, B2</dd>
@@ -63,10 +59,10 @@
         </dl>
     </section>
 </main>
-<footer>
+<footer class="footer">
     <section>
         <h2 id="contacts">Контакты</h2>
-        <ul>
+        <ul class="footer__ul">
             <li>nhummel@yandex.ru</li>
             <li><a href="https://github.com/NiHummel">github.com</a></li>
             <li>+7 (902) 601-04-16</li>

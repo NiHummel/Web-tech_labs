@@ -1,23 +1,83 @@
+body {
+    font-family: sans-serif;
+}
 .header {
     background-color: #FFF1D5;
 }
-
+.header__menu{
+    margin-left: 1%;
+}
 .header__image {
-    filter: drop-shadow(0 0 0.75rem rgb(160, 0, 210));
+    filter: drop-shadow(0 0 0.75rem #CCC1AB);
+    max-height: 10%;
+    max-width: 10%;
+    margin-left: 5%;
+}
+.header__menu__li {
+    list-style-type: none;
+}
+
+.header__menu__link {
+    text-decoration: none;
+    outline: none;
 }
 
 h1 {
+    font-weight: lighter;
     color: #8C42CB;
+    text-align: center;
 }
 
 h2 {
     color: #8C42CB;
+    margin-left: 2%;
+    letter-spacing: 2px;
 }
 
 h3 {
     color: #8C42CB;
+    margin-left: 2%;
+}
+p {
+
+    font-size: 100%;
+    margin-left: 2%;
+    text-transform: capitalize;
 }
 
-.header__image {
+.main {
+    margin-left: 12%;
+    padding: 0 10px;
+}
+.main__section {
+    margin-left: 2%;
+    font-size: 100%;
+}
+.footer {
+    margin-left: 12%;
+    padding: 0 10px;
+}
+.footer__ul {
+    font-size: 100%;
+}
 
+.header__menu__li {
+    line-height: 22px;
+}
+
+.main__dl dt {
+    margin-left: 3%;
+    color: #8C42CB;
+}
+
+.sidenav__header__menu {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
 }
