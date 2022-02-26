@@ -64,14 +64,21 @@ p {
     line-height: 22px;
     text-align: left;
 }
+.header__menu__link:hover {
+    color: white;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.timeLoad {
+    text-align:justify;
+}
 
 .main__dl dt {
     margin-left: 3%;
     color: #8C42CB;
-}
-
-.main__dl dd {
-    margin-left: 4%;
 }
 
 .sidenav__header__menu {
@@ -87,10 +94,11 @@ p {
 }
 
 .main__table {
-    margin-left: 2%;
+    margin: 2% 2% 5%;
     width: 50%;
     border-collapse: collapse;
     border: 1px solid #555;
+
 }
 .main__th {
     color: #8C42CB;
@@ -107,6 +115,34 @@ p {
 .main__table tr:nth-child(2n) {
     background-color: #C9E4F6;
 }
+
+.form__group {
+    margin: 2% 15% 5%;
+    padding:10px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius:8px;
+}
+.form__group__input {
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius:8px;
+}
+
+.form__group__button {
+    margin-top: 2%;
+    float: right;
+    border-radius:8px;
+}
+.form__group_text {
+    display:inline;
+}
+.form__div {
+    margin: 2% 15% 5%;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    display: table;
+    border-radius:8px;
+    padding: 2%;
+}
+
 @media screen and (max-width: 400px) and (max-width: 700px) {
     .header__image{
         display: none;
