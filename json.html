@@ -22,18 +22,28 @@
     </nav>
 </header>
 <main class="main">
-    <table class="main__table">
-        <tr><th class="main__th">Марка</th><th class="main__th">Объем</th></tr>
-        <tr><td class="main__td">coca cola</td><td class="main__td">0.5</td></tr>
-        <tr><td class="main__td">fanta</td><td class="main__td">0.5</td></tr>
-        <tr><td class="main__td">sprite</td><td class="main__td">0.5</td></tr>
+    <div id="loading" class="loader"></div>
+    <table id="jsontable" class="main__template">
+        <thead>
+        <tr class="main__template__tr">
+            <td class="main__template__td">name</td>
+            <td class="main__template__td">email</td>
+            <td class="main__template__td">body</td>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
     </table>
-</main>
 
-<footer class="footer">
-    <div class="timeLoad" id="time"><div id="min"></div></div>
-</footer>
+    <template id="jsontemp">
+        <tr>
+            <td id="template_name"></td>
+            <td id="template_email"></td>
+            <td id="template_body"></td>
+        </tr>
+    </template>
+</main>
 <script src="js/script.js" type="text/javascript"></script>
-<script src="js/time.js" type="text/javascript"></script>
+<script src="js/loadJson.js" type="text/javascript"></script>
 </body>
 </html>
